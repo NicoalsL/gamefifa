@@ -5,6 +5,10 @@ body{
   margin: 0;
   padding: 0;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 .row{
   background-color: rgb(47, 163, 72);
   display: flex;
@@ -13,7 +17,6 @@ body{
   flex-direction: row;
   margin: 0;
   padding: 0;
-  width: 100vw;
 }
 
 /* Styliser l'élément select */
