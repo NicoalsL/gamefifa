@@ -26,7 +26,7 @@ select {
   border: 3px solid #000000; /* Bordure */
   border-radius: 15px; /* Rayon de la bordure pour des coins arrondis */
   margin-top: 10px;
-  font-size: 16px; /* Taille du texte */
+  font-size: 10px; /* Taille du texte */
   cursor: pointer; /* Forme du curseur lors du survol */
 }
 
