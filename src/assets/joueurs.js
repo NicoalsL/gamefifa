@@ -1,7 +1,7 @@
 export const joueurs = [
     {
         ligne: 1,
-        color: "orange",
+        color: '#F46036',
         subcategories: [
             {
                 subRole: "Gk",
@@ -17,7 +17,7 @@ export const joueurs = [
     },
     {
         ligne: 2,
-        color: "jaune",
+        color: "#FFD449",
         subcategories: [
             {
                 subRole: "DD",
@@ -63,7 +63,7 @@ export const joueurs = [
     },
     {
         ligne: 3,
-        color: "vert",
+        color: "#1B998B",
         subcategories: [
             {
                 subRole: "MC",
@@ -89,7 +89,7 @@ export const joueurs = [
     },
     {
         ligne: 4,
-        color: "vert",
+        color: "#1B998B",
         subcategories: [
             {
                 subRole: "MOD",
@@ -125,7 +125,7 @@ export const joueurs = [
     },
     {
         ligne: 5,
-        color: "bleu",
+        color: "#3083DC",
         subcategories: [
             {
                 subRole: "BU",
