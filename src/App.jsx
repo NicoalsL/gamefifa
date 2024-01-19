@@ -71,7 +71,7 @@ function App() {
       <div style={{display: "flex", justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: 0, margin: 0, width: window.innerWidth}}>
         {joueurs.map((joueur, ij) =>{
           console.log(joueur.subcategories)
-          if(!debut){
+          if(debut){
 
           return(
           <div  key={ij} className='row' style={{ width: window.innerWidth }}>
@@ -115,8 +115,8 @@ function App() {
 
       })}
       
-        <button type="button" onClick={handChange} style={{margin: 50, position: 'fixed', top: -10, left: -10, background: '#7CFFC4', padding: 10, borderRadius: 20, fontWeight: 'bold', border: '3px black solid'}}>{jouez}</button>
-        <button type="button" onClick={lancerPileOuFace} style={{margin: 50, position: 'fixed', top: -10, right: -10, background: '#FFC914', padding: 10, borderRadius: 20, fontWeight: 'bold', border: '3px black solid'}}>{pileface}</button>
+        <button type="button" onClick={handChange} style={{margin: 50,color: 'black', position: 'fixed', top: -10, left: -10, background: '#7CFFC4', padding: 10, borderRadius: 20, fontWeight: 'bold', border: '3px black solid'}}>{jouez}</button>
+        <button type="button" onClick={lancerPileOuFace} style={{margin: 50,color: 'black', position: 'fixed', top: -10, right: -10, background: '#FFC914', padding: 10, borderRadius: 20, fontWeight: 'bold', border: '3px black solid'}}>{pileface}</button>
         
       </div>
     )
