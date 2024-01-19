@@ -16,6 +16,7 @@ function App() {
     const [nombre, setNombre] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]); // Use useState here
     const [selectedOptions, setSelectedOptions] = useState({}); // Ajout d'un état pour suivre les options sélectionnées
     const [debut, setDebut] = useState(false)
+    const [selectedPlayers, setSelectedPlayers] = useState(new Set());
 
     const probabilites = [0, 1, 1, 2, 2, 2, 3, 3, 4];
   
@@ -25,18 +26,26 @@ function App() {
     }
 
     function handleSelectChange(event, uniqueId) {
-      // Met à jour l'état en conservant les valeurs existantes et en ajoutant/mettant à jour la valeur pour uniqueId
+      const player = event.target.value;
       setSelectedOptions(prevOptions => ({
         ...prevOptions,
-        [uniqueId]: event.target.value
+        [uniqueId]: player
       }));
-      console.log("player:", uniqueId)
+    
+      // Ajouter le joueur à la liste des joueurs sélectionnés
+      if (player !== 'Joueur') {
+        setSelectedPlayers(prevSelectedPlayers => new Set(prevSelectedPlayers).add(player));
+      }
+    
+      console.log("player:", uniqueId);
     }
+    
   
     let index = 0
     console.log('nombre', nombre)
   
     function handChange(){
+      setSelectedPlayers(new Set())
       setDebut(true)
       const nouveauNombre = Array(18).fill(0).map(() => randomValue());
       setNombre(nouveauNombre);
@@ -65,13 +74,15 @@ function App() {
                         </div>
                       </div>
                       <p style={{ margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'black' }}>{selectedOptions[uniqueId] ?selectedOptions[uniqueId] : 'joueur'}</p> {/* Afficher la valeur sélectionnée */}
-
                       <select name="" id={uniqueId} onChange={(e) => handleSelectChange(e, uniqueId)}>
-                        <option >Joueur</option>
-                          {play.players[nombre[index -1]].map((plays,i) =>(
-                            <option key={i}>{plays}</option>
+                        <option>Joueur</option>
+                        {play.players[nombre[index - 1]]
+                          .filter(player => !selectedPlayers.has(player)) // Filtrer les joueurs déjà sélectionnés
+                          .map((player, i) => (
+                            <option key={i}>{player}</option>
                           ))}
-                        </select>
+                      </select>
+
                       </div>
                 )
               })}
@@ -86,6 +97,7 @@ function App() {
       }
 
       })}
+      
         <button type="button" onClick={handChange} style={{margin: 50}}>Jouez</button>
       </div>
     )
