@@ -58,7 +58,7 @@ function App() {
   
     function handChange(){
       setJouez('Relancer')
-      setpileface('lancer')
+      setpileface('Lancer')
       setSelectedPlayers(new Set())
       setDebut(true)
       const nouveauNombre = Array(18).fill(0).map(() => randomValue());
@@ -79,12 +79,14 @@ function App() {
             const uniqueId = `${ij}-${pi}`; 
             console.log('joeur:',selectedOptions[uniqueId] )
             index += 1
+            const or = nombre[index - 1] === 0
+            const red = nombre[index - 1] === 4
             console.log('index:', index)
             return(
-                      <div key={pi} style={{margin: 10, position: 'relative',border:'black solid 3px', width: 55 ,borderRadius: 25, height: 100 , padding: 10, display: 'flex', justifyContent: 'center' , flexDirection: 'column', backgroundColor: joueur.color}}>
+                      <div key={pi} style={{margin: 10, position: 'relative',border: or ? '#DAA520 5px solid': red ? 'red 5px solid' : 'black 5px solid', width: 55 ,borderRadius: 25, height: 100 , padding: 10, display: 'flex', justifyContent: 'space-around' , flexDirection: 'column', backgroundColor: joueur.color}}>
                         <div style={{display: 'flex', marginBottom: 10, color: 'black', flexDirection: 'row', textAlign: 'center', alignItems: 'center'}}>
                         <p style={{fontWeight: 'bold', fontSize:15}}>{play.subRole}</p>
-                      <div style={{border: 'black 5px solid',position: 'absolute',top: -10, right: -10, height: 20, width: 20, background: 'black', borderRadius: 50, textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
+                      <div style={{border:  or ? '#DAA520 5px solid': red ? 'red 5px solid' : 'black 5px solid',position: 'absolute',top: -10, right: -10, height: 20, width: 20, background: or ? '#DAA520' : red ? 'red': 'black', borderRadius: 50, textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
                         <p style={{margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'white',}}>{nombre[index - 1]}</p>
                         </div>
                       </div>
@@ -98,7 +100,7 @@ function App() {
                             <option key={i}>{player}</option>
                           ))}
                       </select> :
-                      <p style={{ margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', fontSize: 10, color: 'black',overflowWrap: 'break-word'  }}>{selectedOptions[uniqueId] ? selectedOptions[uniqueId] : 'joueur'}</p> }
+                      <p style={{margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', fontSize: 10, color: 'black',overflowWrap: 'break-word'  }}>{selectedOptions[uniqueId] ? selectedOptions[uniqueId] : 'joueur'}</p> }
 
                       </div>
                 )

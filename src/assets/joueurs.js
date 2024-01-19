@@ -192,9 +192,9 @@ export const joueurs = [
             {
                 subRole: "MOD",
                 players: {
-                    0: ["Vini", "Mbappe"],
+                    0: ["Vinicius", "Mbappe"],
                     1: ["Salah", "Son", "Coman", "Dembele"],
-                    2: ["Saka", "Kvara", "Sane", "Mane"],
+                    2: ["Saka", "Kvaratskhelia", "Sane", "Mane"],
                     3: ["Leao", "Diaz", "Rodrigo", "Diaby"],
                     4: ["Raphinha", "Chiesa", "Doku", "Mahrez"]
                 }
