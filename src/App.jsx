@@ -30,26 +30,23 @@ function App() {
       console.log('nombre', nouveauNombre);
     }
     return (
-      <div style={{display: "flex", justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
+      <div style={{display: "flex", justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: 0, margin: 0, width: window.innerWidth}}>
         {joueurs.map((joueur, ij) =>{
           console.log(joueur.subcategories)
           return(
-          <div key={ij}>
-          <div  className='row' style={{maxWidth: window.innerWidth, width: window.innerWidth}}>
+          <div  key={ij} className='row' style={{ width: window.innerWidth -100}}>
           {joueur.subcategories.map((play, pi) =>{
             index += 1
             console.log('index:', index)
             return(
-                      <div key={pi} style={{margin: 10, border: 'black solid 5px', borderRadius: 25, height: 100, padding: 10, display: 'flex', flexDirection: 'column', backgroundColor: joueur.color}}>
-                        <div style={{display: 'flex', color: 'black', flexDirection: 'row', justifyContent: 'space-around'}}>
+                      <div key={pi} style={{margin: 10, border:'black solid 3px', borderRadius: 25, height: 100 , padding: 10, display: 'flex', justifyContent: 'center' , flexDirection: 'column', backgroundColor: joueur.color}}>
+                        <div style={{display: 'flex', color: 'black', flexDirection: 'row', justifyContent: 'space-around', textAlign: 'center', alignItems: 'center'}}>
                         <p style={{fontWeight: 'bold'}}>{play.subRole}</p>
                       <div style={{border: 'black 5px solid', height: 15, width: 15, background: 'black', borderRadius: 30, textAlign: 'center'}}>
-                      <p style={{margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'white'}}>
-                        {nombre[index - 1]}
-                      </p>
+                        <p style={{margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'white'}}>{nombre[index - 1]}</p>
                         </div>
                       </div>
-                        <select name="" id="">
+                        <select name="" id={index}>
                           {play.players[nombre[index -1]].map((plays,i) =>(
                             <option key={i}>{plays}</option>
                           ))}
@@ -58,7 +55,6 @@ function App() {
                 )
               })}
               </div>
-          </div>
         )})}
         <button type="button" onClick={handChange} style={{margin: 50}}>Jouez</button>
       </div>
@@ -66,7 +62,7 @@ function App() {
 }
 
   return (
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center',width: window.innerWidth }}>
+    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', maxWidth: window.innerWidth }}>
       {isPlay && <Play commencer={commencer} />}
       {isCreationEquipe && <CreationEquipe />}
 

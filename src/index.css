@@ -21,11 +21,11 @@ body{
 
 /* Styliser l'élément select */
 select {
-  width: 80px; /* Largeur du select */
+  width: 80;
   height: 40px; /* Hauteur du select */
   background-color: #f2f2f2; /* Couleur de fond */
-  border: 1px solid #ccc; /* Bordure */
-  border-radius: 5px; /* Rayon de la bordure pour des coins arrondis */
+  border: 3px solid #000000; /* Bordure */
+  border-radius: 15px; /* Rayon de la bordure pour des coins arrondis */
   padding: 5px; /* Espacement interne */
   margin: 10px; /* Marge externe */
   font-size: 16px; /* Taille du texte */
