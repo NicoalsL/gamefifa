@@ -15,6 +15,7 @@ function App() {
   function CreationEquipe(){
     const [nombre, setNombre] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]); // Use useState here
     const [selectedOptions, setSelectedOptions] = useState({}); // Ajout d'un état pour suivre les options sélectionnées
+    const [debut, setDebut] = useState(false)
 
     const probabilites = [0, 1, 1, 2, 2, 2, 3, 3, 4];
   
@@ -36,6 +37,7 @@ function App() {
     console.log('nombre', nombre)
   
     function handChange(){
+      setDebut(true)
       const nouveauNombre = Array(18).fill(0).map(() => randomValue());
       setNombre(nouveauNombre);
       console.log('nombre', nouveauNombre);
@@ -46,6 +48,8 @@ function App() {
       <div style={{display: "flex", justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: 0, margin: 0, width: window.innerWidth}}>
         {joueurs.map((joueur, ij) =>{
           console.log(joueur.subcategories)
+          if(debut){
+
           return(
           <div  key={ij} className='row' style={{ width: window.innerWidth }}>
           {joueur.subcategories.map((play, pi) =>{
@@ -72,7 +76,16 @@ function App() {
                 )
               })}
               </div>
-        )})}
+        )
+      }else{
+        return(
+          <div  key={ij} className='row' style={{ width: window.innerWidth }}>
+
+              </div>
+        )
+      }
+
+      })}
         <button type="button" onClick={handChange} style={{margin: 50}}>Jouez</button>
       </div>
     )
