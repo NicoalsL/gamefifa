@@ -67,14 +67,14 @@ function App() {
             index += 1
             console.log('index:', index)
             return(
-                      <div key={pi} style={{margin: 10, border:'black solid 3px', width: 50 ,borderRadius: 25, height: 100 , padding: 10, display: 'flex', justifyContent: 'center' , flexDirection: 'column', backgroundColor: joueur.color}}>
+                      <div key={pi} style={{margin: 10, border:'black solid 3px', width: 55 ,borderRadius: 25, height: 100 , padding: 10, display: 'flex', justifyContent: 'center' , flexDirection: 'column', backgroundColor: joueur.color}}>
                         <div style={{display: 'flex', marginBottom: 10, color: 'black', flexDirection: 'row', justifyContent: 'space-around', textAlign: 'center', alignItems: 'center'}}>
                         <p style={{fontWeight: 'bold'}}>{play.subRole}</p>
                       <div style={{border: 'black 5px solid', height: 15, width: 15, background: 'black', borderRadius: 30, textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
                         <p style={{margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'white'}}>{nombre[index - 1]}</p>
                         </div>
                       </div>
-                      <p style={{ margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'black',overflowWrap: 'break-word'  }}>{selectedOptions[uniqueId] ? selectedOptions[uniqueId] : 'joueur'}</p> {/* Afficher la valeur sélectionnée */}
+                      <p style={{ margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', fontSize: 15, color: 'black',overflowWrap: 'break-word'  }}>{selectedOptions[uniqueId] ? selectedOptions[uniqueId] : 'joueur'}</p> {/* Afficher la valeur sélectionnée */}
                       
                       {!selectedOptions[uniqueId] && <select name="" id={uniqueId} onChange={(e) => handleSelectChange(e, uniqueId)}>
                         <option>Joueur</option>
