@@ -30,8 +30,8 @@ function App() {
           index += 1
           console.log('index:', index)
           return(
-                    <div key={pi} style={{margin: 10, border: 'black solid 5px', borderRadius: 25, height: 100, padding: 10, display: 'flex', flexDirection: 'column'}}>
-                      <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around'}}>
+                    <div key={pi} style={{margin: 10, border: 'black solid 5px', borderRadius: 25, height: 100, padding: 10, display: 'flex', flexDirection: 'column', backgroundColor: 'white'}}>
+                      <div style={{display: 'flex', color: 'black', flexDirection: 'row', justifyContent: 'space-around'}}>
                       <p>{play.subRole}</p>
                     <div style={{border: 'red 5px solid', height: 15, width: 15, background: 'red', borderRadius: 30, textAlign: 'center'}}>
                     <p style={{margin: 0, padding: 0, textAlign: 'center'}}>
