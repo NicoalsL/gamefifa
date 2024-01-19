@@ -56,7 +56,7 @@ function App() {
                       <div key={pi} style={{margin: 10, border:'black solid 3px', borderRadius: 25, height: 100 , padding: 10, display: 'flex', justifyContent: 'center' , flexDirection: 'column', backgroundColor: joueur.color}}>
                         <div style={{display: 'flex', marginBottom: 10, color: 'black', flexDirection: 'row', justifyContent: 'space-around', textAlign: 'center', alignItems: 'center'}}>
                         <p style={{fontWeight: 'bold'}}>{play.subRole}</p>
-                      <div style={{border: 'black 5px solid', height: 15, width: 15, background: 'black', borderRadius: 30, textAlign: 'center'}}>
+                      <div style={{border: 'black 5px solid', height: 15, width: 15, background: 'black', borderRadius: 30, textAlign: 'center', display: 'flex', justifyContent: 'center', alignItems:'center'}}>
                         <p style={{margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'white'}}>{nombre[index - 1]}</p>
                         </div>
                       </div>
