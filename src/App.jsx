@@ -61,6 +61,7 @@ function App() {
                       <p style={{ margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'black' }}>{selectedOptions[uniqueId] ?selectedOptions[uniqueId] : 'joueur'}</p> {/* Afficher la valeur sélectionnée */}
 
                       <select name="" id={uniqueId} onChange={(e) => handleSelectChange(e, uniqueId)}>
+                        <option >Joueur</option>
                           {play.players[nombre[index -1]].map((plays,i) =>(
                             <option key={i}>{plays}</option>
                           ))}
