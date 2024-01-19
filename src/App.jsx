@@ -63,6 +63,7 @@ function App() {
           <div  key={ij} className='row' style={{ width: window.innerWidth }}>
           {joueur.subcategories.map((play, pi) =>{
             const uniqueId = `${ij}-${pi}`; 
+            console.log('joeur:',selectedOptions[uniqueId] )
             index += 1
             console.log('index:', index)
             return(
@@ -73,15 +74,16 @@ function App() {
                         <p style={{margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'white'}}>{nombre[index - 1]}</p>
                         </div>
                       </div>
-                      <p style={{ margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'black' }}>{selectedOptions[uniqueId] ?selectedOptions[uniqueId] : 'joueur'}</p> {/* Afficher la valeur sélectionnée */}
-                      <select name="" id={uniqueId} onChange={(e) => handleSelectChange(e, uniqueId)}>
+                      <p style={{ margin: 0, padding: 0, textAlign: 'center', fontWeight: 'bold', color: 'black' }}>{selectedOptions[uniqueId] ? selectedOptions[uniqueId] : 'joueur'}</p> {/* Afficher la valeur sélectionnée */}
+                      
+                      {!selectedOptions[uniqueId] && <select name="" id={uniqueId} onChange={(e) => handleSelectChange(e, uniqueId)}>
                         <option>Joueur</option>
                         {play.players[nombre[index - 1]]
                           .filter(player => !selectedPlayers.has(player)) // Filtrer les joueurs déjà sélectionnés
                           .map((player, i) => (
                             <option key={i}>{player}</option>
                           ))}
-                      </select>
+                      </select>}
 
                       </div>
                 )
