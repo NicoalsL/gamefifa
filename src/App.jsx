@@ -39,6 +39,8 @@ function App() {
       const nouveauNombre = Array(18).fill(0).map(() => randomValue());
       setNombre(nouveauNombre);
       console.log('nombre', nouveauNombre);
+      setSelectedOptions({});
+
     }
     return (
       <div style={{display: "flex", justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: 0, margin: 0, width: window.innerWidth}}>
