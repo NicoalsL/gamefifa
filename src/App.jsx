@@ -16,6 +16,7 @@ function App() {
     const [nombre, setNombre] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]); // Use useState here
     const [selectedOptions, setSelectedOptions] = useState({}); // Ajout d'un état pour suivre les options sélectionnées
     const [debut, setDebut] = useState(false)
+    const [jouez, setJouez] = useState('Lancer')
     const [selectedPlayers, setSelectedPlayers] = useState(new Set());
 
     const probabilites = [0, 1, 1, 2, 2, 2, 3, 3, 4];
@@ -45,6 +46,7 @@ function App() {
     console.log('nombre', nombre)
   
     function handChange(){
+      setJouez('Relancer')
       setSelectedPlayers(new Set())
       setDebut(true)
       const nouveauNombre = Array(18).fill(0).map(() => randomValue());
@@ -100,7 +102,7 @@ function App() {
 
       })}
       
-        <button type="button" onClick={handChange} style={{margin: 50}}>Jouez</button>
+        <button type="button" onClick={handChange} style={{margin: 50, position: 'fixed', top: -10, left: -10, background: '#7CFFC4', padding: 10, borderRadius: 20, fontWeight: 'bold', border: '3px black solid'}}>{jouez}</button>
       </div>
     )
 }
