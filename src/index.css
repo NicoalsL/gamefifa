@@ -1,0 +1,49 @@
+body{
+  background-color: rgb(21, 28, 25);
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.row{
+  background-color: rgb(47, 163, 72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styliser l'élément select */
+select {
+  width: 100px; /* Largeur du select */
+  height: 40px; /* Hauteur du select */
+  background-color: #f2f2f2; /* Couleur de fond */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 5px; /* Rayon de la bordure pour des coins arrondis */
+  padding: 5px; /* Espacement interne */
+  margin: 10px; /* Marge externe */
+  font-size: 16px; /* Taille du texte */
+  cursor: pointer; /* Forme du curseur lors du survol */
+}
+
+/* Styliser les options à l'intérieur du select */
+select option {
+  padding: 10px; /* Espacement interne */
+  margin: 2px 0; /* Marge externe entre les options */
+  border-bottom: 1px solid #eee; /* Ligne de séparation entre les options */
+  background-color: white; /* Couleur de fond des options */
+  color: #333; /* Couleur du texte des options */
+}
+
+/* Modifier l'apparence du select lors du survol */
+select:hover {
+  background-color: #e8e8e8;
+}
+
+/* Modifier l'apparence du select lorsqu'il est focus (sélectionné) */
+select:focus {
+  border-color: #0066ff;
+  box-shadow: 0 0 5px rgba(0, 102, 255, .5);
+}
