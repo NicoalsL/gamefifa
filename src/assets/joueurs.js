@@ -36,7 +36,7 @@ export const joueurs = [
           1: ["Saliba", "Upamecano", "Tomori", "Koundé"],
           2: ["Rudiger", "Bremer", "Kim Min Jae", "Araujo"],
           3: ["Gvardiol", "Konaté", "Alaba", "Varane"],
-          4: ["Koulibaly", "Aké", "Diaz", "Todibo"],
+          4: ["Koulibaly", "Aké", "Diaz", "St. Juste"],
         },
       },
       {
@@ -46,7 +46,7 @@ export const joueurs = [
           1: ["Saliba", "Upamecano", "Tomori", "Koundé"],
           2: ["Rudiger", "Bremer", "Kim Min Jae", "Araujo"],
           3: ["Gvardiol", "Konaté", "Alaba", "Varane"],
-          4: ["Koulibaly", "Aké", "Diaz", "Todibo"],
+          4: ["Koulibaly", "Aké", "Diaz", "St. Juste"],
         },
       },
       {
@@ -170,7 +170,7 @@ export const joueurs = [
           1: ["Saliba", "Upamecano", "Tomori", "Koundé"],
           2: ["Rudiger", "Bremer", "Kim Min Jae", "Araujo"],
           3: ["Gvardiol", "Konaté", "Alaba", "Varane"],
-          4: ["Koulibaly", "Aké", "Diaz", "Todibo"],
+          4: ["Koulibaly", "Aké", "Diaz", "St. Juste"],
         },
       },
       {
