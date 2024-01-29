@@ -130,11 +130,11 @@ export const joueurs = [
       {
         subRole: "BU",
         players: {
-          0: ["Haaland", "Osimhen"],
-          1: ["Ronaldo", "Lewandowski", "Benzema", "Grizmann"],
-          2: ["Martinez", "Rashford", "Immobile", "Kane"],
-          3: ["Darwin Nunez", "Gabriel Jesus", "Kolo Muani", "Jota"],
-          4: ["Openda", "Felix", "Gakpo", "Inaki Williams"],
+          0: ["Haaland", "Mbapper"],
+          1: ["Osimhen", "Lewandowski", "Benzema", "Grizmann"],
+          2: ["Martinez", "Rashford", "Immobile", "Ronaldo"],
+          3: ["Darwin Nunez", "Gabriel Jesus", "Kane", "Jota"],
+          4: ["Openda", "Felix", "Gakpo", "Kolo Muani"],
         },
       },
     ],
@@ -212,11 +212,11 @@ export const joueurs = [
       {
         subRole: "BU",
         players: {
-          0: ["Haaland", "Osimhen"],
-          1: ["Ronaldo", "Lewandowski", "Benzema", "Grizmann"],
-          2: ["Martinez", "Rashford", "Immobile", "Kane"],
-          3: ["Darwin Nunez", "Gabriel Jesus", "Kolo Muani", "Jota"],
-          4: ["Openda", "Felix", "Gakpo", "Inaki Williams"],
+          0: ["Haaland", "Mbapper"],
+          1: ["Osimhen", "Lewandowski", "Benzema", "Grizmann"],
+          2: ["Martinez", "Rashford", "Immobile", "Ronaldo"],
+          3: ["Darwin Nunez", "Gabriel Jesus", "Kane", "Jota"],
+          4: ["Openda", "Felix", "Gakpo", "Kolo Muani"],
         },
       },
     ],
