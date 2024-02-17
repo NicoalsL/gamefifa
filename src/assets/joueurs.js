@@ -1,7 +1,7 @@
 export const joueurs = [
   {
     ligne: 1,
-    color: "#F46036",
+    color: "#FC9E4F",
     subcategories: [
       {
         subRole: "Gk",
@@ -63,33 +63,33 @@ export const joueurs = [
   },
   {
     ligne: 3,
-    color: "#1B998B",
+    color: "#5FBB97",
     subcategories: [
       {
         subRole: "MC",
         players: {
           0: ["Bellingham", "Valverde"],
-          1: ["Silva", "De Jong", "Rodri", "Kimmich"],
-          2: ["Barella", "Modric", "Rice", "Llorente"],
-          3: ["Casemiro", "Rabiot", "Camavinga", "Can"],
-          4: ["Pedri", "Tchouaméni", "Milinkovic-Savic", "Bennacer"],
+          1: ["Goretzka", "De Jong", "Rodri", "Kimmich"],
+          2: ["Barella", "Modric", "Silva", "Llorente"],
+          3: ["Rice", "Rabiot", "Camavinga", "Can"],
+          4: ["Pedri", "Tchouaméni", "Casemiro", "Bennacer"],
         },
       },
       {
         subRole: "MC",
         players: {
           0: ["Bellingham", "Valverde"],
-          1: ["Silva", "De Jong", "Rodri", "Kimmich"],
-          2: ["Barella", "Modric", "Rice", "Llorente"],
-          3: ["Casemiro", "Rabiot", "Camavinga", "Can"],
-          4: ["Pedri", "Tchouaméni", "Milinkovic-Savic", "Bennacer"],
+          1: ["Goretzka", "De Jong", "Rodri", "Kimmich"],
+          2: ["Barella", "Modric", "Silva", "Llorente"],
+          3: ["Rice", "Rabiot", "Camavinga", "Can"],
+          4: ["Pedri", "Tchouaméni", "Casemiro", "Bennacer"],
         },
       },
     ],
   },
   {
     ligne: 4,
-    color: "#1B998B",
+    color: "#5FBB97",
     subcategories: [
       {
         subRole: "MOD",
@@ -141,7 +141,7 @@ export const joueurs = [
   },
   {
     ligne: 6,
-    color: "#252627",
+    color: "#B288C0",
     subcategories: [
       {
         subRole: "Gk",
@@ -177,17 +177,17 @@ export const joueurs = [
         subRole: "MC",
         players: {
           0: ["Bellingham", "Valverde"],
-          1: ["Silva", "De Jong", "Rodri", "Kimmich"],
-          2: ["Barella", "Modric", "Rice", "Llorente"],
-          3: ["Casemiro", "Rabiot", "Camavinga", "Can"],
-          4: ["Pedri", "Tchouaméni", "Milinkovic-Savic", "Bennacer"],
+          1: ["Goretzka", "De Jong", "Rodri", "Kimmich"],
+          2: ["Barella", "Modric", "Silva", "Llorente"],
+          3: ["Rice", "Rabiot", "Camavinga", "Can"],
+          4: ["Pedri", "Tchouaméni", "Casemiro", "Bennacer"],
         },
       },
     ],
   },
   {
     ligne: 7,
-    color: "#252627",
+    color: "#B288C0",
     subcategories: [
       {
         subRole: "MOD",

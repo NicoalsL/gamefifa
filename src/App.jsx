@@ -104,7 +104,7 @@ function App() {
                         border: or
                           ? "#DAA520 5px solid"
                           : red
-                          ? "red 5px solid"
+                          ? "#D8315B 5px solid"
                           : "black 5px solid",
                         width: 55,
                         borderRadius: 25,
@@ -126,7 +126,16 @@ function App() {
                           alignItems: "center",
                         }}
                       >
-                        <p style={{ fontWeight: "bold", fontSize: 15 }}>
+                        <p
+                          style={{
+                            fontWeight: "bold",
+                            fontSize: 15,
+                            padding: 2,
+                            top: 15,
+                            left: 15,
+                            position: "absolute",
+                          }}
+                        >
                           {play.subRole}
                         </p>
                         <div
@@ -134,14 +143,18 @@ function App() {
                             border: or
                               ? "#DAA520 5px solid"
                               : red
-                              ? "red 5px solid"
+                              ? "#D8315B 5px solid"
                               : "black 5px solid",
                             position: "absolute",
                             top: -10,
                             right: -10,
                             height: 20,
                             width: 20,
-                            background: or ? "#DAA520" : red ? "red" : "black",
+                            background: or
+                              ? "#DAA520"
+                              : red
+                              ? "#D8315B"
+                              : "black",
                             borderRadius: 50,
                             textAlign: "center",
                             display: "flex",
@@ -166,7 +179,7 @@ function App() {
 
                       {!selectedOptions[uniqueId] ? (
                         <select
-                          name=""
+                          name={`${uniqueId}_select`}
                           id={uniqueId}
                           onChange={(e) => handleSelectChange(e, uniqueId)}
                         >
