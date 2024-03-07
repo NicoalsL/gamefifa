@@ -1,3 +1,54 @@
+const gk = {
+  0: ["Courtois", "Alison"],
+  1: ["Ter Stegen", "Ederson", "Oblak", "Kobel"],
+  2: ["Donnarumma", "Maignan", "Neuer", "Martinez"],
+  3: ["Szczęsny", "Bounou", "Vlachodimos", "Ramsdale"],
+  4: ["Unai Simon", "Remiro", "Pau Lopez", "Casteels"],
+};
+const dl = {
+  0: ["Davies", "Walker"],
+  1: ["Hernandez", "Grimaldo", "Hakimi", "Cancelo"],
+  2: ["Frimpong", "Nuno Mendes", "Di Lorenzo", "Mendy"],
+  3: ["Cuadrado", "Alexander-Arnold", "Spinazzola", "Robertson"],
+  4: ["Udogie", "Balde", "Clauss", "James"],
+};
+const dc = {
+  0: ["Van Dijk", "Militao"],
+  1: ["Saliba", "Upamecano", "Tomori", "Araujo"],
+  2: ["Rudiger", "Bremer", "Marquinhos", "Koundé"],
+  3: ["Kim Min Jae", "Konaté", "Alaba", "Akanji"],
+  4: ["Stones", "Aké", "Dias", "Varane"],
+};
+const mc = {
+  0: ["Bellingham", "Valverde"],
+  1: ["Goretzka", "De Jong", "Rodri", "Kimmich"],
+  2: ["Barella", "Modric", "Bernardo Silva", "Llorente"],
+  3: ["Rice", "Rabiot", "Camavinga", "Can"],
+  4: ["Pedri", "Tchouaméni", "Casemiro", "Çalhanoğlu"],
+};
+
+const mol = {
+  0: ["Vinicius", "Salah"],
+  1: ["Sane", "Son", "Coman", "Dembele"],
+  2: ["Rodrigo", "Kvaratskhelia", "Diaz", "Mane"],
+  3: ["Leao", "Chiesa", "Saka", "Diaby"],
+  4: ["Raphinha", "Martinelli ", "Doku", "Mahrez"],
+};
+const moc = {
+  0: ["Neymar", "Messi"],
+  1: ["De Bruyne", "Odegaard", "Musiala", "Depay"],
+  2: ["Bruno Fernandes", "Foden", "Wirtz", "Dybala"],
+  3: ["Szoboszlai", "Nkunku", "Fekir", "Xavi Simons"],
+  4: ["Paquetá", "Madison", "Havertz", "Grealish"],
+};
+const bu = {
+  0: ["Haaland", "Mbapper"],
+  1: ["Osimhen", "Lewandowski", "Ronaldo", "Grizmann"],
+  2: ["Martinez", "Rashford", "Immobile", "Benzema"],
+  3: ["Darwin Nunez", "Gabriel Jesus", "Kane", "Jota"],
+  4: ["Openda", "Felix", "Gakpo", "Kolo Muani"],
+};
+
 export const joueurs = [
   {
     ligne: 1,
@@ -5,13 +56,7 @@ export const joueurs = [
     subcategories: [
       {
         subRole: "Gk",
-        players: {
-          0: ["Courtois", "Alison"],
-          1: ["Ter Stegen", "Ederson", "Oblak", "Kobel"],
-          2: ["Donnarumma", "Maignan", "Neuer", "Martinez"],
-          3: ["Szczęsny", "Bounou", "Vlachodimos", "Ramsdale"],
-          4: ["Unai Simon", "Remiro", "Pau Lopez", "Casteels"],
-        },
+        players: gk,
       },
     ],
   },
@@ -21,43 +66,19 @@ export const joueurs = [
     subcategories: [
       {
         subRole: "DD",
-        players: {
-          0: ["Davies", "Hakimi"],
-          1: ["Hernandez", "Nuno Mendes", "Walker", "Cancelo"],
-          2: ["Frimpong", "Grimaldo", "Di Lorenzo", "Mendy"],
-          3: ["Cuadrado", "James", "Jordi Alba", "Robertson"],
-          4: ["Kostic", "Balde", "Clauss", "Molina"],
-        },
+        players: dl,
       },
       {
         subRole: "DC",
-        players: {
-          0: ["Van Dijk", "Militao"],
-          1: ["Saliba", "Upamecano", "Tomori", "Koundé"],
-          2: ["Rudiger", "Bremer", "Kim Min Jae", "Araujo"],
-          3: ["Gvardiol", "Konaté", "Alaba", "Varane"],
-          4: ["Koulibaly", "Aké", "Diaz", "St. Juste"],
-        },
+        players: dc,
       },
       {
         subRole: "DC",
-        players: {
-          0: ["Van Dijk", "Militao"],
-          1: ["Saliba", "Upamecano", "Tomori", "Koundé"],
-          2: ["Rudiger", "Bremer", "Kim Min Jae", "Araujo"],
-          3: ["Gvardiol", "Konaté", "Alaba", "Varane"],
-          4: ["Koulibaly", "Aké", "Diaz", "St. Juste"],
-        },
+        players: dc,
       },
       {
         subRole: "DG",
-        players: {
-          0: ["Davies", "Hakimi"],
-          1: ["Hernandez", "Nuno Mendes", "Walker", "Cancelo"],
-          2: ["Frimpong", "Grimaldo", "Di Lorenzo", "Mendy"],
-          3: ["Cuadrado", "James", "Jordi Alba", "Robertson"],
-          4: ["Kostic", "Balde", "Clauss", "Molina"],
-        },
+        players: dl,
       },
     ],
   },
@@ -67,23 +88,11 @@ export const joueurs = [
     subcategories: [
       {
         subRole: "MC",
-        players: {
-          0: ["Bellingham", "Valverde"],
-          1: ["Goretzka", "De Jong", "Rodri", "Kimmich"],
-          2: ["Barella", "Modric", "Silva", "Llorente"],
-          3: ["Rice", "Rabiot", "Camavinga", "Can"],
-          4: ["Pedri", "Tchouaméni", "Casemiro", "Bennacer"],
-        },
+        players: mc,
       },
       {
         subRole: "MC",
-        players: {
-          0: ["Bellingham", "Valverde"],
-          1: ["Goretzka", "De Jong", "Rodri", "Kimmich"],
-          2: ["Barella", "Modric", "Silva", "Llorente"],
-          3: ["Rice", "Rabiot", "Camavinga", "Can"],
-          4: ["Pedri", "Tchouaméni", "Casemiro", "Bennacer"],
-        },
+        players: mc,
       },
     ],
   },
@@ -93,33 +102,15 @@ export const joueurs = [
     subcategories: [
       {
         subRole: "MOD",
-        players: {
-          0: ["Vinicius", "Salah"],
-          1: ["Sane", "Son", "Coman", "Dembele"],
-          2: ["Saka", "Kvaratskhelia", "Diaz", "Mane"],
-          3: ["Leao", "Chiesa", "Rodrigo", "Diaby"],
-          4: ["Raphinha", "Martinelli ", "Doku", "Mahrez"],
-        },
+        players: mol,
       },
       {
         subRole: "MOC",
-        players: {
-          0: ["Neymar", "Messi"],
-          1: ["De Bruyne", "Odegaard", "Musiala", "Depay"],
-          2: ["Bruno Fernandes", "Foden", "Nkunku", "Dybala"],
-          3: ["Szoboszlai", "Wirtz", "Fekir", "Xavi Simons"],
-          4: ["Paquetá", "Madison", "Havertz", "Grealish"],
-        },
+        players: moc,
       },
       {
         subRole: "MOG",
-        players: {
-          0: ["Vinicius", "Salah"],
-          1: ["Sane", "Son", "Coman", "Dembele"],
-          2: ["Saka", "Kvaratskhelia", "Diaz", "Mane"],
-          3: ["Leao", "Chiesa", "Rodrigo", "Diaby"],
-          4: ["Raphinha", "Martinelli ", "Doku", "Mahrez"],
-        },
+        players: mol,
       },
     ],
   },
@@ -129,13 +120,7 @@ export const joueurs = [
     subcategories: [
       {
         subRole: "BU",
-        players: {
-          0: ["Haaland", "Mbapper"],
-          1: ["Osimhen", "Lewandowski", "Benzema", "Grizmann"],
-          2: ["Martinez", "Rashford", "Immobile", "Ronaldo"],
-          3: ["Darwin Nunez", "Gabriel Jesus", "Kane", "Jota"],
-          4: ["Openda", "Felix", "Gakpo", "Kolo Muani"],
-        },
+        players: bu,
       },
     ],
   },
@@ -145,43 +130,19 @@ export const joueurs = [
     subcategories: [
       {
         subRole: "Gk",
-        players: {
-          0: ["Courtois", "Alison"],
-          1: ["Ter Stegen", "Ederson", "Oblak", "Kobel"],
-          2: ["Donnarumma", "Maignan", "Neuer", "Martinez"],
-          3: ["Szczęsny", "Bounou", "Vlachodimos", "Ramsdale"],
-          4: ["Unai Simon", "Remiro", "Pau Lopez", "Casteels"],
-        },
+        players: gk,
       },
       {
-        subRole: "DD",
-        players: {
-          0: ["Davies", "Hakimi"],
-          1: ["Hernandez", "Nuno Mendes", "Walker", "Cancelo"],
-          2: ["Frimpong", "Grimaldo", "Di Lorenzo", "Mendy"],
-          3: ["Cuadrado", "James", "Jordi Alba", "Robertson"],
-          4: ["Kostic", "Balde", "Clauss", "Molina"],
-        },
+        subRole: "dL",
+        players: dl,
       },
       {
         subRole: "DC",
-        players: {
-          0: ["Van Dijk", "Militao"],
-          1: ["Saliba", "Upamecano", "Tomori", "Koundé"],
-          2: ["Rudiger", "Bremer", "Kim Min Jae", "Araujo"],
-          3: ["Gvardiol", "Konaté", "Alaba", "Varane"],
-          4: ["Koulibaly", "Aké", "Diaz", "St. Juste"],
-        },
+        players: dc,
       },
       {
         subRole: "MC",
-        players: {
-          0: ["Bellingham", "Valverde"],
-          1: ["Goretzka", "De Jong", "Rodri", "Kimmich"],
-          2: ["Barella", "Modric", "Silva", "Llorente"],
-          3: ["Rice", "Rabiot", "Camavinga", "Can"],
-          4: ["Pedri", "Tchouaméni", "Casemiro", "Bennacer"],
-        },
+        players: mc,
       },
     ],
   },
@@ -190,34 +151,16 @@ export const joueurs = [
     color: "#B288C0",
     subcategories: [
       {
-        subRole: "MOD",
-        players: {
-          0: ["Vinicius", "Salah"],
-          1: ["Sane", "Son", "Coman", "Dembele"],
-          2: ["Saka", "Kvaratskhelia", "Diaz", "Mane"],
-          3: ["Leao", "Chiesa", "Rodrigo", "Diaby"],
-          4: ["Raphinha", "Martinelli ", "Doku", "Mahrez"],
-        },
+        subRole: "MOL",
+        players: mol,
       },
       {
         subRole: "MOC",
-        players: {
-          0: ["Neymar", "Messi"],
-          1: ["De Bruyne", "Odegaard", "Musiala", "Depay"],
-          2: ["Bruno Fernandes", "Foden", "Nkunku", "Dybala"],
-          3: ["Szoboszlai", "Wirtz", "Fekir", "Xavi Simons"],
-          4: ["Paquetá", "Madison", "Havertz", "Grealish"],
-        },
+        players: moc,
       },
       {
         subRole: "BU",
-        players: {
-          0: ["Haaland", "Mbapper"],
-          1: ["Osimhen", "Lewandowski", "Benzema", "Grizmann"],
-          2: ["Martinez", "Rashford", "Immobile", "Ronaldo"],
-          3: ["Darwin Nunez", "Gabriel Jesus", "Kane", "Jota"],
-          4: ["Openda", "Felix", "Gakpo", "Kolo Muani"],
-        },
+        players: bu,
       },
     ],
   },
